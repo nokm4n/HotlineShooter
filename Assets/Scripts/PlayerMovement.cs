@@ -5,13 +5,18 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField, NotNull] private Rigidbody2D _rb;
-    [SerializeField, NotNull] private Camera _camera;
     [SerializeField] private float _speed;
 
+    private Camera _camera;
     private Vector2 _movement;
     private Vector2 _mousePos;
 
-    void Update()
+	private void Start()
+	{
+        _camera = Camera.main;
+	}
+
+	void Update()
     {
         _movement.x = Input.GetAxisRaw("Horizontal");
         _movement.y = Input.GetAxisRaw("Vertical");
