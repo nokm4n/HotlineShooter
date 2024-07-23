@@ -8,6 +8,7 @@ public abstract class AbilityBase : MonoBehaviour
 	protected AbilityType AbilityType;
 	protected AttackRangeType AttackRangeType;
 	protected DamageType DamageType;
+
 }
 public enum AttackType
 {
