@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField, NotNull] private Rigidbody2D _rb;
     [SerializeField] private float _speed;
+    
 
     private Camera _camera;
     private Vector2 _movement;
